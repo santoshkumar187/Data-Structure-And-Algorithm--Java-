@@ -1,0 +1,62 @@
+
+
+// An array is a data structure that stores a fixed-size sequence of elements of the same type. Here’s how you can work with them:
+// ----------------------------------------------
+
+// 1. Declaring and Initializing Arrays:
+
+int[] myArray; // Declaration
+
+myArray = new int[5]; // Initialization 
+
+int[] myArray = {1, 2, 3, 4, 5}; // Declaration and Initialization 
+
+// -----------------------------------------------
+
+// 2. Accessing Array Elements:
+
+int firstElement = myArray[0]; // Access first element
+int secondElement = myArray[1]; // Access second element
+
+// -----------------------------------------------
+
+// 3. Looping through Arrays:
+
+for (int i = 0; i < myArray.length; i++) {
+    System.out.println(myArray[i]);
+}
+
+// Enhanced for loop
+for (int element : myArray) {
+    System.out.println(element);
+}
+
+// -----------------------------------------------
+
+// 4. Multi-dimensional Arrays:
+
+// 2D array
+int[][] matrix = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+
+// Accessing 2D array elements
+int element = matrix[1][2]; // Accesses the element at second row, third column
+
+// -----------------------------------------------
+
+// 5. Array Operations:
+
+int length = myArray.length; // Finding the length
+
+int[] newArray = Arrays.copyOf(myArray, myArray.length); // Copying arrays
+
+Arrays.sort(myArray); // sorting arrays
+
+int index = Arrays.binarySearch(myArray, 3); // searching in arrays
+
+String srrStr = Arrays.toString(myArray); // convert array to a string
+
+Arrays.fill(myArray, 0); // Fill the array with zeros
